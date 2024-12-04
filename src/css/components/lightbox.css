@@ -1,3 +1,26 @@
 /**
 * Lightbox
 */
+dialog {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+dialog img {
+    width: 100%;
+    height: auto;
+    border-color: antiquewhite;
+    border-width: medium;
+}
+
+/* Effet de fond lors de l'ouverture de la lightbox */
+dialog::backdrop {
+    background: rgba(102, 61, 7, 0.8);
+    
+
+}
+
+/* Optionnel : ajout d'un effet lors de l'apparition de l'image */
+dialog[open] img {
+    animation: fadeIn 2s ease-in-out;
+}
